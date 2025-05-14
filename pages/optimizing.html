@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Optimizing Images</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 2rem;
+      background: #f9f9f9;
+    }
+    h1 {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+    .column {
+      display: inline-block;
+      width: 48%;
+      vertical-align: top;
+      margin-right: 2%;
+    }
+    .column:last-child {
+      margin-right: 0;
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin-bottom: 0.5rem;
+    }
+    .info {
+      font-size: 0.9rem;
+      margin-bottom: 1.5rem;
+    }
+    .gallery img {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Optimizing Images</h1>
+
+  <div class="column">
+    <h2>Format Comparison</h2>
+
+    <img src="../images/80.jpg" alt="JPEG 80">
+    <div class="info">JPEG Quality 80 – High visual fidelity, larger file size.</div>
+
+    <img src="../images/40.jpg" alt="JPEG 40">
+    <div class="info">JPEG Quality 40 – Noticeable compression artifacts, smaller size.</div>
+
+    <img src="../images/256.gif" alt="GIF 256">
+    <div class="info">GIF 256 Colors – Decent quality, supports animation, limited color range.</div>
+
+    <img src="../images/64.gif" alt="GIF 64">
+    <div class="info">GIF 64 Colors – Lower fidelity, smaller file size.</div>
+
+    <img src="../images/8.gif" alt="GIF 8">
+    <div class="info">GIF 8 Colors – Heavy loss of color detail, very small file size.</div>
+
+    <img src="../images/24.png" alt="PNG 24">
+    <div class="info">PNG-24 – Lossless format, high quality, large file size, supports transparency.</div>
+  </div>
+
+  <div class="column">
+    <h2>Web-Optimized Unsplash Gallery</h2>
+    <div class="gallery">
+      <img src="../images/opt1.jpg" alt="Image 1">
+      <img src="../images/opt2.jpg" alt="Image 2">
+      <img src="../images/opt3.jpg" alt="Image 3">
+      <img src="../images/opt4.jpg" alt="Image 4">
+      <img src="../images/opt5.jpg" alt="Image 5">
+      <img src="../images/opt6.jpg" alt="Image 6">
+      <img src="../images/opt7.jpg" alt="Image 7">
+      <img src="../images/opt8.jpg" alt="Image 8">
+      <img src="../images/opt9.jpg" alt="Image 9">
+      <img src="../images/opt10.jpg" alt="Image 10">
+    </div>
+  </div>
+
+</body>R
+</html>
