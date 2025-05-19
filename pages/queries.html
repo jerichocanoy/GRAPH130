@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Responsive Media Queries</title>
+
+  <!-- Inline Media Queries -->
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      transition: background-color 0.5s ease;
+    }
+
+    /* Max width 481px */
+    @media screen and (max-width: 481px) {
+      body {
+        background-color: lightblue;
+      }
+    }
+
+    /* Max width 641px */
+    @media screen and (max-width: 641px) {
+      body {
+        background-color: lightgreen;
+      }
+    }
+
+    /* Min width 961px */
+    @media screen and (min-width: 961px) {
+      body {
+        background-color: lightyellow;
+      }
+    }
+  </style>
+
+  <!-- External CSS Files -->
+  <link rel="stylesheet" href="../styles/queries1.css" />
+  <link rel="stylesheet" href="../styles/queries2.css" />
+</head>
+<body>
+  <h1>Responsive Web Design with Media Queries</h1>
+  <p>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+    potenti. Integer non sapien nec nulla imperdiet ullamcorper. Aliquam erat volutpat.
+  </p>
+  <p>
+    Duis at velit maximus, molestie est a, tempor magna. Integer ullamcorper neque eu purus euismod, ac faucibus mauris posuere.
+  </p>
+</body>
+</html>
