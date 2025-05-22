@@ -1,0 +1,70 @@
+.hero-lopez {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  background-image: url(../images/sj-images/sj-041.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 200px;
+}
+
+main {
+  /* display: grid; */
+  grid-auto-rows: minmax(400px, auto);
+  grid-template-areas:
+    "first second sidebar"
+    "first middle sidebar"
+    "first last last"
+    "bottom1 bottom1 bottom2";
+
+}
+
+.item1 {
+  grid-area: first;
+  height: 100%;
+  background-image: url(../images/sj-images/sj-063.jpg);
+  background-size: cover;
+}
+
+.item2 {
+  grid-area: second;
+}
+
+.pic2 {
+  background-image: url(../images/sj-images/sj-030.jpg);
+  background-size: cover;
+  height: 200px;
+}
+
+.item3 {
+  grid-area: sidebar;
+  height: 100%;
+}
+
+.item4 {
+  grid-area: middle;
+}
+
+.pic4 {
+  background-image: url(../images/sj-images/sj-057.jpg);
+  background-size: cover;
+  height: 200px;
+}
+
+.item5 {
+  grid-area: last;
+}
+
+.item6 {
+  grid-area: bottom1;
+}
+
+.pic6 {
+  background-image: url(../images/sj-images/sj-026.jpg);
+  background-size: cover;
+  height: 200px;
+}
+
+.item7 {
+  grid-area: bottom2;
+}
