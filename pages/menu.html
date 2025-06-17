@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Responsive Menu</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .navbar {
+      display: flex;
+      background-color: #333;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0.5rem 1rem;
+      color: white;
+    }
+
+    .brand-title {
+      font-size: 1.5rem;
+    }
+
+    .toggle-button {
+      font-size: 1.5rem;
+      color: white;
+      background: none;
+      border: none;
+      cursor: pointer;
+      display: none;
+    }
+
+    .kiwi ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+    }
+
+    .kiwi li {
+      margin: 0 0.75rem;
+    }
+
+    .kiwi a {
+      color: white;
+      text-decoration: none;
+    }
+
+    @media screen and (max-width: 768px) {
+      .toggle-button {
+        display: block;
+      }
+
+      .kiwi {
+        display: none;
+        width: 100%;
+      }
+
+      .kiwi.active {
+        display: block;
+      }
+
+      .kiwi ul {
+        flex-direction: column;
+        width: 100%;
+      }
+
+      .kiwi li {
+        text-align: center;
+        margin: 1rem 0;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="brand-title">My Website</div>
+    <a href="javascript:void(0);" class="toggle-button">&#9776;</a>
+    <div class="kiwi">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main style="padding: 1rem;">
+    <h1>Welcome to My Site</h1>
+    <p>This is the main content area. Resize the window to see the responsive menu in action.</p>
+  </main>
+
+  <script>
+    const toggleButton = document.getElementsByClassName('toggle-button')[0];
+    const navbarLinks = document.getElementsByClassName('kiwi')[0];
+
+    if (toggleButton && navbarLinks) {
+      toggleButton.addEventListener('click', () => {
+        navbarLinks.classList.toggle('active');
+      });
+    }
+  </script>
+</body>
+</html>
