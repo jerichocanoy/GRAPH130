@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Responsive Magazine Layout</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+    }
+
+    nav {
+      background: #333;
+      color: white;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      padding: 1rem;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+    }
+
+    header, footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      background: #f4f4f4;
+    }
+
+    section {
+      padding: 2rem 1rem;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .mag-page {
+      display: grid;
+      gap: 1.5rem;
+    }
+
+    @media (min-width: 600px) {
+      .mag-page {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (min-width: 1024px) {
+      .mag-page {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+
+    .scan-imgs img {
+      width: 100%;
+      height: auto;
+      margin-bottom: 1rem;
+      border: 1px solid #ccc;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="#page1">Page 1</a>
+    <a href="#page2">Page 2</a>
+    <a href="#page3">Page 3</a>
+    <a href="#scans">Scans</a>
+  </nav>
+
+  <header>
+    <h1>Magazine-Inspired Responsive Layout</h1>
+    <p>Final Project – Web Design</p>
+  </header>
+
+  <main>
+    <section id="page1">
+      <h2>Magazine Page 1</h2>
+      <div class="mag-page">
+        <article>
+          <h3>Cover Story</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae sapien in dui sagittis rutrum. Phasellus a hendrerit enim.</p>
+        </article>
+        <section>
+          <p>Praesent euismod augue vitae lorem scelerisque, ac commodo neque sodales. Nullam iaculis, sapien ut pulvinar luctus, metus sem consequat.</p>
+        </section>
+        <section>
+          <p>Fusce facilisis, odio nec ullamcorper efficitur, enim eros tincidunt ligula, sed blandit libero metus vel leo.</p>
+        </section>
+      </div>
+    </section>
+
+    <section id="page2">
+      <h2>Magazine Page 2</h2>
+      <div class="mag-page">
+        <article>
+          <h3>Featured Interview</h3>
+          <p>Fusce sed lorem ac metus fermentum bibendum. Proin faucibus nec lorem et accumsan. Pellentesque porta fermentum augue.</p>
+        </article>
+        <section>
+          <p>Integer cursus, mi a sodales ullamcorper, purus nisi egestas felis, eget porttitor erat mi vel velit. Sed a lacus vel eros suscipit.</p>
+        </section>
+        <section>
+          <p>Curabitur viverra, mauris id malesuada dapibus, turpis nulla posuere eros, ac fermentum odio ante eget nisl.</p>
+        </section>
+      </div>
+    </section>
+
+    <section id="page3">
+      <h2>Magazine Page 3</h2>
+      <div class="mag-page">
+        <article>
+          <h3>Closing Feature</h3>
+          <p>Maecenas eget sapien nec mauris gravida accumsan. Aenean mattis, justo nec vulputate blandit, nunc sapien porta risus, at eleifend orci.</p>
+        </article>
+        <section>
+          <p>Donec vestibulum risus sed lacus volutpat, a pretium massa cursus. Sed volutpat ultricies dolor, non iaculis urna fermentum vel.</p>
+        </section>
+        <section>
+          <p>Etiam at lorem vitae magna finibus tempor. Vivamus vulputate urna nec velit blandit, nec hendrerit velit volutpat.</p>
+        </section>
+      </div>
+    </section>
+
+    <section id="scans" class="scan-imgs">
+      <h2>Scanned Magazine Images</h2>
+      <img src="scan1.jpg" alt="Scanned Page 1" />
+      <img src="scan2.jpg" alt="Scanned Page 2" />
+      <img src="scan3.jpg" alt="Scanned Page 3" />
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Final Project — Responsive Web Design</p>
+  </footer>
+</body>
+</html>
